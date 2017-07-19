@@ -10,6 +10,7 @@ for repo in REPO_CONFIG:
 
 
     call(['java','-cp','karma-spark-0.0.1-SNAPSHOT-shaded.jar','edu.isi.karma.rdf.OfflineRdfGenerator',
+        '--baseuri',base_uri,
         '--sourcetype',input_file_type,
         '--filepath',join(name,input_file),
         '--modelfilepath',join(name,model_file),
