@@ -16,3 +16,4 @@ deploy:
   file: output/test.rdf
   on:
     repo: ColbyMuseum/ccma
+    tags: true
