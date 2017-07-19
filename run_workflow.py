@@ -1,5 +1,3 @@
-
-
 from workflow_config import REPO_CONFIG, base_uri
 from subprocess import call
 from os.path import join
