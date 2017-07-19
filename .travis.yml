@@ -9,6 +9,9 @@ script:
 - wget https://github.com/usc-isi-i2/Web-Karma/releases/download/v2.053/karma-spark-0.0.1-SNAPSHOT-shaded.jar
 - mkdir output
 - python run_workflow.py
+
+after_script:
+- ls output/
 deploy:
   provider: releases
   api_key:
