@@ -14,7 +14,7 @@ for repo in REPO_CONFIG:
         '--filepath',join(name,input_file),
         '--modelfilepath',join(name,model_file),
         '--sourcename','ccma',
-        '--outputfile','output/test.rdf']
+        '--outputfile',join('output',input_file.replace(input_file_type,"rdf"))]
         )
     # FIXME: make this n3 generation 
 
