@@ -9,13 +9,14 @@ script:
 - wget https://github.com/usc-isi-i2/Web-Karma/releases/download/v2.053/karma-spark-0.0.1-SNAPSHOT-shaded.jar
 - mkdir output
 - python run_workflow.py
+- cat output/* > output/ccma.rdf
 
 deploy:
   provider: releases
   api_key:
     secure: PC2GxtUE9RY4gG5+ccLh1tMKR72t3GgCMV3cWFDq9mW8rutRa3RGwycuQFxNzWQrr0yZgRs6wd8wk1IBu3epBjpklDHjmmQZiiQtrp1/dxSjwFj5Hrv3IrJ5Hm/ITEroByJpFBdHxIAQBH1GoSBSKJ9BAnfly9gWd0xVeHzZXT2KJs7Eg7wyWbDu1hWFMnGnWNBzUfKasNyoV1qeJwaEmNsaVBHD7cod/i0x2JS7HbPvOItsiBft39zc60bVkapjY8EBRnganhwBse0wYerTwtNpPc+fDqPKXweH5yJQkUcj/leBULw64RKaf04O6tvw4KUELXCejndBQ0/06Wnzl/2wUZSFWK//hikWYiuafX4QdGsNYg3b8HHKNyZqJ4fzYPe6txK71egcTLcb2rXrQef0NirE2U9zvWTD37eoS1vL+ks7O3x848QK5SQIzrd6UwwAHm4pjh7fQ+DZhiO325fyWobDu5iJ6oZy8pDon5fsWLUzaYRZ3MA1bLvJ3VFOd6Hw1kkPw1kyxTJ/zaPp4CwMaSIgVIQJPClLFQZB3rlacpZaoFRvy9JgSmiesvqrVn9rfMk+duv7J2TB4Zd39uFuNDEgkltfaiY6OtUOEKQwYSX6DdJNcHaoLJsm3EVjx4jRnOB/2cos6M5JyWPyHkyT/QXvIcccuAso5hbMJnU=
   file_glob: true
-  file: output/*
+  file: output/ccma.rdf
   skip_cleanup: true
   on:
     repo: ColbyMuseum/ccma
