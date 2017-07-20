@@ -1,5 +1,7 @@
 # Open-licensed Collections Data for the Colby College Museum of Art
 
+![build status](https://travis-ci.org/ColbyMuseum/ccma.svg?branch=master)
+
 This repository contains open-licensed releases of the Colby College Museum of Art's collections data. This release consists of 7659 objects, including data for the Lunder Collection and works by Alex Katz in the collection. It is published under a Creative Commons 1.0 License (https://creativecommons.org/publicdomain/zero/1.0/). Associated code is published under a BSD-style license (see below).
 
 This data is the result of the Museum's project to clean, normalize, and release collections data under an open license. It is presented without images (the data is also available in a searchable, but web-only, form at http://www.colby.edu/museum/?s). Our goal is ultimately to release this data as semantically-expressed linked data as part of our participation in the American Art Collaborative (http://www.americanartcollaborative.org).
